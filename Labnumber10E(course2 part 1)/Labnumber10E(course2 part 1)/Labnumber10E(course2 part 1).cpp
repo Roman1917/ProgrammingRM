@@ -10,6 +10,7 @@ int main()
 
 	cout << "¬ведите размер матрицы: " << endl;
 	cin >> n;
+
 	cin >> m;
 	Matrix a(n, m);
 	for (;;) {
