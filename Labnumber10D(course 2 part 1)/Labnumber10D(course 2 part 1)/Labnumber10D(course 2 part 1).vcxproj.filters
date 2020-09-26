@@ -18,5 +18,13 @@
     <ClCompile Include="Labnumber10D(course 2 part 1).cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Labnumber10D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Labnumber10D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
