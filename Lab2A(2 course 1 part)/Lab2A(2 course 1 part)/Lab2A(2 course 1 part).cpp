@@ -1,5 +1,5 @@
 
-#include "Lab2.h"
+#include "Lab2A.h"
 int isvalid(int a, int b) {
 	if (((a > N - 1) || (a < 0)) || ((b > N - 1) || (b < 0)))
 	{
