@@ -24,6 +24,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Labnumber11Ecourse2part1cpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <ProjectName>Labnumber11E(course 2 part 1)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -152,7 +153,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Lab11E.cpp" />
-    <ClCompile Include="Labnumber11E(course 2 part 1).cpp.cpp" />
+    <ClCompile Include="Labnumber11E%28course 2 part 1%29.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Lab11E.h" />
