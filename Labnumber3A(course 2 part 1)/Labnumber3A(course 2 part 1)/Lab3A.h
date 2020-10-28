@@ -4,8 +4,9 @@
 using namespace std;
 
 class SOBAKA {
-public:
 	int weight, age;
+public:
+	
 
 
 
@@ -16,7 +17,7 @@ public:
 
 	void Show_Sobaka() {
 
-		cout << "Вес= " << weight << endl << "  Возраст=" << age << endl;
+		cout << "Вес собаки= " << weight << endl << "  Возраст собаки=" << age << endl;
 	}
 
 	void golos() {
@@ -28,17 +29,16 @@ public:
 };
 
 class SPANIEL : public SOBAKA {
+	string color;
 
 public:
-
-	string color;
 	SPANIEL() {
 		cout << "Конструктор класса спаниель" << endl;
 		color = "Коричневый";
 	}
 
 	void Show_Spaniel() {
-		cout << "Цвет= " << color << endl;
+		cout << "Цвет собаки= " << color << endl;
 	}
 	~SPANIEL() { cout << "Деструктора класса Спаниель" << endl; };
 

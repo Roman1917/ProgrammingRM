@@ -6,9 +6,9 @@ using namespace std;
 int main()
 {
 	srand(time(NULL));
-	Sets set_1;
-	Sets set_2(4, 100, 5);
-	Sets set_3(set_1.GetSet(), 5);
+	Pro set_1;
+	Pro set_2(4, 100, 5);
+	Pro set_3(set_1.GetPro(), 5);
 	cout << set_1.MaxElem() << endl;
 	cout << set_2.MaxElem() << endl;
 	cout << set_3.MaxElem() << endl;

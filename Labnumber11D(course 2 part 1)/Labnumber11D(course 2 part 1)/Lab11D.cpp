@@ -2,43 +2,45 @@
 #include<iostream>
 #include<vector>
 #include <algorithm>
-Sets::Sets() {
+Pro::Pro() {
 	while (numbers.size() <= 10)
 		numbers.insert(rand() % 41 - 20);
 }
 
-Sets::Sets(int min_elem, int max_elem, int number) {
+Pro::Pro(int min_elem, int max_elem, int number) {
 	while (numbers.size() <= number)
 		numbers.insert(min_elem + (rand() % (max_elem - min_elem + 1)));
 }
 
-Sets::Sets(set<int> set_, int n) {
+Pro::Pro(set<int> set_, int n) {
 	numbers.clear();
-	set<int> ::iterator it = set_.begin();
+	set<int> ::iterator it = set_.begin() ;
 	for (int i = 0; i < n; i++) {
 		numbers.insert(*(it));
 		it++;
+
 	}
 }
 
-set<int> Sets::GetSet() {
+set<int> Pro::GetPro	() {
 	return numbers;
 }
 
-int Sets::MaxElem() {
+int Pro::MaxElem() {
 	set<int> ::iterator it = numbers.end();
 	it--;
 	return *(it);
 }
 
 
-void Sets::Print() {
+void Pro::Print() {
 	for (set<int> ::iterator i = numbers.begin(); i != numbers.end(); i++)
 		cout << *i << ' ';
 	cout << endl;
 }
-set<int> union_set(Sets a, Sets b) {
-	set<int> a1 = a.GetSet(), b1 = b.GetSet();
+
+set<int> union_set(Pro a, Pro b) {
+	set<int> a1 = a.GetPro(), b1 = b.GetPro();
 	vector<int> res;
 	set<int> result;
 	set_union(a1.begin(), a1.end(),
@@ -48,8 +50,8 @@ set<int> union_set(Sets a, Sets b) {
 	return result;
 }
 
-set<int> intersection_set(Sets a, Sets b) {
-	set<int> a1 = a.GetSet(), b1 = b.GetSet();
+set<int> intersection_set(Pro a, Pro b) {
+	set<int> a1 = a.GetPro(), b1 = b.GetPro();
 	vector<int> res;
 	set<int> result;
 	set_intersection(a1.begin(), a1.end(),
@@ -59,8 +61,8 @@ set<int> intersection_set(Sets a, Sets b) {
 	return result;
 }
 
-set<int> difference_set(Sets a, Sets b) {
-	set<int> a1 = a.GetSet(), b1 = b.GetSet();
+set<int> difference_set(Pro a, Pro b) {
+	set<int> a1 = a.GetPro(), b1 = b.GetPro();
 	vector<int> res;
 	set<int> result;
 	set_difference(a1.begin(), a1.end(),
@@ -70,8 +72,8 @@ set<int> difference_set(Sets a, Sets b) {
 	return result;
 }
 
-set<int> symmetric_difference_set(Sets a, Sets b) {
-	set<int> a1 = a.GetSet(), b1 = b.GetSet();
+set<int> symmetric_difference_set(Pro a, Pro b) {
+	set<int> a1 = a.GetPro(), b1 = b.GetPro();
 	vector<int> res;
 	set<int> result;
 	set_symmetric_difference(a1.begin(), a1.end(),
