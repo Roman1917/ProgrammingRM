@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Lab3(course 2 part1).cpp" />
+    <ClCompile Include="lab3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Lab3.h" />

@@ -4,40 +4,43 @@
 #include <stdio.h>
 using namespace std;
 
-class B
-{
+
+class B1 {
 	int a;
 public:
-	B() : a(0) {};
-	B(int x) { a = x; }
-	void show_B() { cout << "B=   " << a << endl; }
-};
+	B1();
+	B1(int a);
 
-class D1 : private B {
+	virtual void show();
+};
+class B2 {
 	int b;
 public:
-	D1(int x, int y) : B(y) { b = x; };
-	void show_D1() { cout << "D1=  " << b << "\n"; show_B(); }
+	B2();
+	B2(int b);
+
+	virtual void show();
 };
 
-class D2 : public B {
+class D1 : private B1, public B2 {
 	int c;
 public:
-	D2(int x, int y) : B(y) { c = x; };
-	void show_D2() { cout << "D2=  " << c << "\n"; show_B(); }
+	D1(int a, int b, int c);
+	void show() override;
 };
 
-class D3 : protected D1 {
+class D2 : public D1 {
 	int d;
 public:
-	D3(int x, int y, int z) : D1(y, z) { d = x; }
-	void show_D3() { cout << "D3=  " << d << "\n"; show_D1(); }
+	D2(int a, int b, int c, int d);
+	void show() override;
 };
 
-class D4 : public D1, private D2 {
+class D3 : private D1 {
 	int e;
 public:
-
-	D4(int x, int y, int z, int i, int j) : D1(y, z), D2(i, j) { e = x; }
-	void show_D4() { cout << "D4=  " << e << "\n"; show_D1(); show_D2(); }
+	D3(int a, int b, int c, int e);
+	void show() override;
 };
+
+
