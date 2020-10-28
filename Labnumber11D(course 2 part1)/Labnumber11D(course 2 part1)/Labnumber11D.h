@@ -9,6 +9,7 @@ public:
 	Pro(int min_elem, int max_elem, int number);
 	Pro(set<int> set_, int n);
 	set<int> GetPro();
+
 	int MaxElem();
 	void Print();
 
