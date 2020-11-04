@@ -6,7 +6,7 @@ class Pro {
 protected:
 	int x;
 public:
-	Pro(int);
+	Pro(int n);
 	virtual ~Pro();
 	virtual int get() const;
 };
