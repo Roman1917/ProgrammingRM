@@ -9,7 +9,6 @@ int main()
 	float h;
 	short i;
 	short q, q1;
-
 	DB* tmp = new DB("\nÁÀÇÀ ÄÀÍÍÛÕ ?1\n");
 
 	for (int a = 0; !a;)

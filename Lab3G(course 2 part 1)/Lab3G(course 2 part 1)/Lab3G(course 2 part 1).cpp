@@ -17,7 +17,7 @@ int main()
 	Figure3 A;
 	Figure3 *px = &A;
 	A.setX(3);
-	A.area(5);
+	A.area();
 	A.show();
 
 
