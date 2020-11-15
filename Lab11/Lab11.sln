@@ -7,6 +7,15 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab11", "Lab11\Lab11.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Labnumber11D(course 2 part1)", "..\Labnumber11D(course 2 part1)\Labnumber11D(course 2 part1)\Labnumber11D(course 2 part1).vcxproj", "{6672BF1B-8680-4779-AD11-CE06A69ECCD0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DBC8E518-1EFB-41B7-8B68-3C0A8F897558}"
+	ProjectSection(SolutionItems) = preProject
+		..\Labnumber11D(course 2 part1)\Labnumber11D(course 2 part1).sln = ..\Labnumber11D(course 2 part1)\Labnumber11D(course 2 part1).sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{59E3577B-2577-43DA-B0A8-8E1192DCF00E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Labnumber3V(course 2 part 1)", "..\Labnumber3V(course 2 part 1)\Labnumber3V(course 2 part 1)\Labnumber3V(course 2 part 1).vcxproj", "{3949F540-6959-425E-8DCE-6ED54A405CAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,9 +40,20 @@ Global
 		{6672BF1B-8680-4779-AD11-CE06A69ECCD0}.Release|x64.Build.0 = Release|x64
 		{6672BF1B-8680-4779-AD11-CE06A69ECCD0}.Release|x86.ActiveCfg = Release|Win32
 		{6672BF1B-8680-4779-AD11-CE06A69ECCD0}.Release|x86.Build.0 = Release|Win32
+		{3949F540-6959-425E-8DCE-6ED54A405CAC}.Debug|x64.ActiveCfg = Debug|x64
+		{3949F540-6959-425E-8DCE-6ED54A405CAC}.Debug|x64.Build.0 = Debug|x64
+		{3949F540-6959-425E-8DCE-6ED54A405CAC}.Debug|x86.ActiveCfg = Debug|Win32
+		{3949F540-6959-425E-8DCE-6ED54A405CAC}.Debug|x86.Build.0 = Debug|Win32
+		{3949F540-6959-425E-8DCE-6ED54A405CAC}.Release|x64.ActiveCfg = Release|x64
+		{3949F540-6959-425E-8DCE-6ED54A405CAC}.Release|x64.Build.0 = Release|x64
+		{3949F540-6959-425E-8DCE-6ED54A405CAC}.Release|x86.ActiveCfg = Release|Win32
+		{3949F540-6959-425E-8DCE-6ED54A405CAC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3949F540-6959-425E-8DCE-6ED54A405CAC} = {59E3577B-2577-43DA-B0A8-8E1192DCF00E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1827CA06-565B-4C52-8A7A-36CDA07F1E79}
