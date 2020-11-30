@@ -18,7 +18,7 @@ ostream& operator<<(ostream& stream, firms& o1) {
 	stream << "|" << setw(10) << o1.firm << "  |  ";
 	stream << setw(5) << o1.kolvprod << "|";
 	stream << setw(18) << o1.sales << "  |";
-	stream << setw(17) << o1.square << "  |" << endl;
+	stream << setw(17) << o1.square << "   |" << endl;
 	linebuild();
 	return stream;
 }
