@@ -28,7 +28,7 @@ Sum Sum::operator==(Sum& o1) {
 	else if (this->getSum() < o1.getSum())
 		cout << this->getSum() << " < " << o1.getSum() << endl;
 	else if (this->getSum() > o1.getSum())
-		cout << this->getSum() << " > " << o1.getSum() << endl;
+		cout << this->getSum() << " > " << o1.getSum() <<  endl;
 	return *this;
 }
 
