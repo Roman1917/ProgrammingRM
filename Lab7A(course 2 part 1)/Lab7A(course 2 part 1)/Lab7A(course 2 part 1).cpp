@@ -17,7 +17,18 @@ void read_of_file(string fileName, double* numbers, int n) {
 
 void write_in_file1(string fileName, double* numbers, int n) {
 	ofstream fout;
-	fout.open(fileName);
+	try
+	{
+		fout.open(fileName);
+		cout << "Файл успешно открыт" << endl;
+	}
+	
+	catch (const exception& ex)
+	{
+		cout << ex.what() << endl;
+		cout << "Ошибка открытия файла" << endl;
+	}
+
 	for (int i = 0; i < n; i++) {
 		numbers[i] = 1 + rand() % 50;
 		fout << numbers[i] << setw(5);
@@ -38,7 +49,9 @@ void write_in_file2(string fileName, COMP* comp_numbers, int n) {
 int main()
 {
 	srand(time(NULL));
+	setlocale(LC_ALL, "rus");
 	string fileName = "Fix.txt";
+	
 	
 	const int n = 10;
 	double numbers[n];
