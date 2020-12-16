@@ -17,7 +17,7 @@ int main()
 		cout << "Enter 1 - to fill team data" << endl
 			<< "Enter 2 - to print team data array" << endl
 			<< "Enter 3 - to save one team data in file" << endl
-			<< "Enter 4 - to import data of one team from file" << endl
+			<< "Enter 4 - to import data of one team from file " << endl
 			<< "Enter 5 - to save all data in file" << endl
 			<< "Enter 6 - to import all data from file" << endl;
 
