@@ -16,6 +16,7 @@ T min(T a, T b)
 	return result;
 }
 template <typename P>
+
 P min1(P a, P b)
 {
 	P result;

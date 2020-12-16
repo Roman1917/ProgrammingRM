@@ -1,5 +1,7 @@
 
 #include <iostream>
+using namespace std;
+
 template <typename T>
 class Array {
 
@@ -9,32 +11,25 @@ public:
 	int size;
 	int ind;
 
-	T max(T* begin, int n) {
-		T max_result = *begin;
-		for (int i = 0; i < n; i++)
-			if (max_result < begin[i])
-				max_result = begin[i];
-		return max_result;
-	}
 	Array() : Array(0) { }
 
 	Array(int n) {
-		size = 100;
+
 		ind = n;
+		size = 100;
 		array = new T[size];
 		for (int i = 0; i < size; i++)
 			array[i] = 0;
 	}
 
-	void SetOneElement(T value, int index) {
-	
-		if (index >= 0 && index < ind) {
-			array[index] = value;
+	void Show() {
+		for (int i = 0; i < ind; i++) {
+			cout << array[i] << " ";
 		}
-		else { throw - 1; }
+		cout << endl;
 	}
 
-	T Subsum() {
+	T SumMas() {
 		T result = 0;
 		for (int i = 0; i < ind; i++)
 			result += array[i];
@@ -42,20 +37,17 @@ public:
 	}
 
 	double Average() {
-		return this->Subsum() / (double)this->ind;
+		return this->SumMas() / (double)this->ind;
 	}
 
-	void Show() {
-		for (int i = 0; i < ind; i++)
-			std::cout << array[i] << " ";
-		std::cout << std::endl;
+	int Init_one(T arg, int index) {
+
+		if (index < ind && index >= 0) {
+			array[index] = arg;
+		}
+		else { return -1; }
 	}
 
-	/*T operator[](int sub_size) {
-		if (sub_size <= ind)
-			return max(array, sub_size);
-		return NULL;
-	}*/
 
 	~Array() { delete[] array; }
 

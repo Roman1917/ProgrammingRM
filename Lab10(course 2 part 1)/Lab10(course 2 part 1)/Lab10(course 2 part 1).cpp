@@ -25,7 +25,7 @@
 			case 2:
 				sort(mas1, 5);
 				for (int i = 0; i < 5; i++) {
-					assert(mas1[i] == mas2[i]);
+					assert(mas1[i] == mas2[i+1]);
 					cout << "true" << endl;
 				}
 				break;
