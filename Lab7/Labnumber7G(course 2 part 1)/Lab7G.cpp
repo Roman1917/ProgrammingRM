@@ -1,6 +1,4 @@
 
-
-////////////////////////////////////
 #include "Lab7G.h"
 
 TeamData::TeamData()
